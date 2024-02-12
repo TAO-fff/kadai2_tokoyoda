@@ -1,0 +1,86 @@
+/* box1 */
+.box-area1 {
+  max-width: 960px;
+}
+
+.box1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box1-item {
+  width: 300px;
+  background-color: blue;
+}
+
+/* box2 */
+.box-area2 {
+  margin: 50px 0; /* 上下と間隔を取るためにmargin入れました。 */
+  max-width: 960px;
+}
+
+.box2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box2-item {
+  width: 300px;
+  background-color: blue;
+}
+
+/* box3 flexbox practice */
+.box-area3 {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.box3 {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+p {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  font-size: 14px;
+  padding: 3px 30px 0;
+}
+
+li + li {
+  border-left: 1px solid #222;
+}
+
+@media screen and (max-width: 767px) {
+  .box3 {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  p {
+    text-align: start;
+    padding-left: 10px;
+  }
+
+  ul {
+    flex-direction: column;
+  }
+  li {
+    padding: 10px 20px;
+  }
+  li + li {
+    border-top: 1px solid #222;
+    border-left: none;
+  }
+}
